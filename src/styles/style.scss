@@ -1,0 +1,99 @@
+
+
+$tagline-color: #DBDBDB;
+$upthere-black: #202020;
+$max-width-xs: 768px;
+
+body {
+    background-color: $upthere-black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 737px;
+    }
+}
+
+.page-header {
+    border: 0;
+    margin-bottom: 0;
+    @media (min-width: $max-width-xs) {
+        margin-top: 65px;
+        padding: 0;
+        padding-left: 50px;
+    }
+
+    .titleIcon {
+        @media (max-width: $max-width-xs) {
+            display: none;
+        }
+        width: 40px;
+        margin-left: -50px;
+        position: absolute;
+        top: 0;
+        margin-top: 6px;
+    }
+    .title {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .subtitle {
+        font-size: 21px;
+        padding-top: 4px;
+    }
+    .tagline {
+        font-size: 14px;
+        color: $tagline-color;
+        padding-top: 4px;
+    }
+}
+
+.features {
+    @media (min-width: $max-width-xs) {
+        padding: 0;
+    }
+    margin-top: 60px;
+
+    .features-card {
+        @media (max-width: $max-width-xs) {
+            margin-top: 78px;
+        }
+
+        text-align: center;
+
+        .image {
+            border-radius: 50%;
+            width: 200px;
+        }
+        .headline {
+            margin-top: 38px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .summary {
+            margin-top: 18px;
+            font-size: 14px;
+        }
+    }
+}
+
+.footer {
+    @media (min-width: $max-width-xs) {
+        padding: 0;
+    }
+
+    .footerImage {
+        @media (max-width: $max-width-xs) {
+            width: 100%;
+            margin-top: 78px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        width: 120%;
+        margin-left: -73px;
+        margin-top: 50px;
+    }
+}
